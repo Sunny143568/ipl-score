@@ -1,25 +1,63 @@
-<div style="margin:20px">
+<!DOCTYPE html>
+<html>
 
-<a href="index.html">HOME</a> |
-<a href="schedule.html">SCHEDULE</a> |
-<a href="points.html">POINTS TABLE</a>
+<head>
 
-</div><title>IPL Live Score</title>
+<title>IPL Live Score</title>
 
 <style>
 
 body{
-background:#0b0b0b;
-color:white;
+margin:0;
 font-family:Arial;
+background:#0a0a0a;
+color:white;
+}
+
+header{
+background:#ff3c00;
+padding:15px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+}
+
+nav{
+background:#111;
+padding:12px;
 text-align:center;
 }
 
-.score{
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+}
+
+nav a:hover{
+color:#ff3c00;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
 background:#1c1c1c;
 padding:20px;
-margin:40px;
+margin:20px auto;
+width:80%;
 border-radius:10px;
+text-align:center;
+box-shadow:0px 0px 10px black;
+}
+
+footer{
+background:#111;
+padding:10px;
+text-align:center;
+margin-top:40px;
 }
 
 </style>
@@ -28,18 +66,51 @@ border-radius:10px;
 
 <body>
 
-<h1>IPL LIVE SCORE</h1>
+<header>
 
-<div class="score">
+IPL LIVE SCORE
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="schedule.html">Schedule</a>
+<a href="points.html">Points Table</a>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Live Match</h2>
 
 <iframe 
 src="https://www.ipl.com/widget"
-width="700"
-height="200">
-
+width="100%"
+height="200"
+frameborder="0">
 </iframe>
 
 </div>
+
+<div class="card">
+
+<h2>Today's Match</h2>
+
+<p>MI vs CSK</p>
+<p>Start Time: 7:30 PM</p>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 IPL Score Website
+
+</footer>
 
 </body>
 
